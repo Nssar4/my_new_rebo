@@ -29,7 +29,7 @@ class PermissionScreen extends StatelessWidget {
           // Blurred Background
           Positioned.fill(
             child: Image.asset(
-              'assets/blurred_bg.png', // Replace with an actual blurred background
+              'assets/blurred_bg.png', 
               fit: BoxFit.cover,
             ),
           ),
@@ -77,3 +77,4 @@ class PermissionScreen extends StatelessWidget {
     );
   }
 }
+
