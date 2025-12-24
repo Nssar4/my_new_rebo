@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'phaseTwo_screen.dart'; // متأكد إن الملف موجود عندك
+import 'phaseTwo_screen.dart'; 
 
 class AcceptScreen extends StatelessWidget {
   const AcceptScreen({super.key});
@@ -67,10 +67,10 @@ class _PageOne extends StatelessWidget {
       children: [
         BackgroundHeader(),
         Padding(
-          padding: EdgeInsets.fromLTRB(20, 270, 20, 20), // تحت الصور على طول
+          padding: EdgeInsets.fromLTRB(20, 270, 20, 20), 
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // بادئ من الشمال
+              crossAxisAlignment: CrossAxisAlignment.start, 
               children: [
                 Text(
                   'Subject: Congratulations! Your project has been accepted on our platform 🚀',
@@ -108,10 +108,10 @@ class _PageTwo extends StatelessWidget {
       children: [
         BackgroundHeader(),
         Padding(
-          padding: EdgeInsets.fromLTRB(20, 270, 20, 20), // تحت الصور على طول
+          padding: EdgeInsets.fromLTRB(20, 270, 20, 20), 
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // بادئ من الشمال
+              crossAxisAlignment: CrossAxisAlignment.start, 
               children: [
                 Text(
                   '🚀 Welcome to the first real step toward funding your project!',
@@ -149,10 +149,10 @@ class _PageThree extends StatelessWidget {
         const BackgroundHeader(),
         Padding(
           padding:
-              const EdgeInsets.fromLTRB(20, 270, 20, 20), // تحت الصور على طول
+              const EdgeInsets.fromLTRB(20, 270, 20, 20), 
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // بادئ من الشمال
+              crossAxisAlignment: CrossAxisAlignment.start, 
               children: [
                 const Text(
                   'Phase 1:\nSubmitting in the platform and getting your Acceptance.\n(you already done it)',
@@ -224,3 +224,4 @@ class _PageThree extends StatelessWidget {
     );
   }
 }
+
