@@ -2,7 +2,6 @@ import 'package:first_page/apply_screenD.dart';
 import 'package:flutter/material.dart';
 
 class ApplyScreenC extends StatefulWidget {
-  // استقبال البيانات المجمعة من الصفحات السابقة
   final Map<String, dynamic> allCollectedData;
 
   const ApplyScreenC({super.key, required this.allCollectedData});
@@ -12,7 +11,6 @@ class ApplyScreenC extends StatefulWidget {
 }
 
 class _ApplyScreenCState extends State<ApplyScreenC> {
-  // Controllers لحقول الإدخال في هذه الصفحة
   final TextEditingController revenueController = TextEditingController();
   final TextEditingController revenueGrowthController = TextEditingController();
   final TextEditingController profitMarginController = TextEditingController();
@@ -124,7 +122,6 @@ class _ApplyScreenCState extends State<ApplyScreenC> {
                     ),
                     child: IconButton(
                       onPressed: () {
-                        // جمع البيانات من الصفحة الحالية
                         final Map<String, dynamic> currentPageData = {
                           'revenue': revenueController.text,
                           'revenue_growth': revenueGrowthController.text,
@@ -139,7 +136,6 @@ class _ApplyScreenCState extends State<ApplyScreenC> {
                               debtToProfitRatioController.text,
                         };
 
-                        // دمج كل البيانات المجمعة حتى الآن
                         final Map<String, dynamic> combinedData = {
                           ...widget.allCollectedData,
                           ...currentPageData,
@@ -223,7 +219,7 @@ class _ApplyScreenCState extends State<ApplyScreenC> {
           ),
           builder: (_) {
             return SizedBox(
-              height: 300, // ارتفاع البوتوم شيت
+              height: 300, 
               child: ListView.separated(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 itemCount: options.length,
@@ -281,3 +277,4 @@ class _ApplyScreenCState extends State<ApplyScreenC> {
     );
   }
 }
+
